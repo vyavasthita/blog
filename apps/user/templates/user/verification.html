@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <p>
+        Dear {{ username }}, 
+        <br>
+        <br>
+        Thanks for the registration with email {{ email }}.
+        <br>
+        <br>
+        Your password is given below.
+        <br>
+        <br>
+        <b>{{ password }}</b>
+        <br>
+        <br>
+
+        Please click the below link to activate your account.
+        <br>
+        <br>
+        <p><a href="{{ confirm_url }}">{{ confirm_url }}</a></p>
+    </p>
+{% endblock %}
